@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK体育 · 再次遇见你</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #faf7f2;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            color: #2c3e3b;
+            line-height: 1.75;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.03), 0 2px 8px rgba(0, 0, 0, 0.02);
+            border-radius: 28px;
+            padding: 2.5rem 2rem;
+        }
+
+        @media (min-width: 640px) {
+            .page {
+                padding: 4rem 3.5rem;
+            }
+        }
+
+        /* hero 区域 */
+        .hero {
+            margin-bottom: 2.8rem;
+            border-bottom: 1px solid #e6ddd3;
+            padding-bottom: 1.8rem;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: #1f2f2b;
+            line-height: 1.2;
+            margin-bottom: 0.8rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #7a7a6f;
+            font-style: italic;
+            display: block;
+            margin-top: 0.25rem;
+        }
+
+        .hero .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 1.2rem;
+            font-size: 0.85rem;
+            color: #8f8f82;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed #e2d9ce;
+        }
+
+        .hero .meta span {
+            background: #f3efe9;
+            padding: 0.2rem 0.7rem;
+            border-radius: 20px;
+        }
+
+        /* 引用块 / 提示框 */
+        .inset-box {
+            background-color: #f6f2eb;
+            border-left: 5px solid #b7a894;
+            padding: 1.6rem 2rem;
+            margin: 2.2rem 0;
+            border-radius: 0 18px 18px 0;
+            font-size: 0.98rem;
+            color: #3b4a44;
+        }
+
+        .inset-box strong {
+            font-weight: 600;
+            color: #1e332e;
+        }
+
+        .inset-box a {
+            color: #3f5f56;
+            text-decoration: underline;
+            text-decoration-color: #b7a894;
+            text-underline-offset: 3px;
+        }
+
+        .inset-box a:hover {
+            color: #1f3c34;
+        }
+
+        /* 正文段落 */
+        .content p {
+            margin-bottom: 1.6rem;
+            text-align: justify;
+            font-size: 1.02rem;
+        }
+
+        .content p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .content .dropcap::first-letter {
+            font-size: 3rem;
+            float: left;
+            line-height: 0.9;
+            margin-right: 0.5rem;
+            margin-top: 0.1rem;
+            color: #7a6b58;
+            font-family: 'Georgia', serif;
+            font-weight: 500;
+        }
+
+        /* 签名 / 分割 */
+        .signature-line {
+            margin: 2.4rem 0 0.8rem;
+            text-align: right;
+            font-style: italic;
+            color: #7d7d70;
+            font-size: 0.9rem;
+            border-top: 1px solid #e7dfd6;
+            padding-top: 1.5rem;
+        }
+
+        .signature-line a {
+            color: #3f5f56;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7a894;
+        }
+
+        .signature-line a:hover {
+            border-bottom-style: solid;
+            color: #1f3c34;
+        }
+
+        /* 页尾 */
+        .footer-note {
+            margin-top: 2.8rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e4dbd0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: #6d6d62;
+        }
+
+        .footer-note .tag {
+            background: #ede8e0;
+            padding: 0.15rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            color: #5e5e52;
+        }
+
+        /* 响应式微调 */
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .page {
+                padding: 1.8rem 1.2rem;
+                border-radius: 20px;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .inset-box {
+                padding: 1.2rem 1.2rem;
+                margin-left: -0.4rem;
+                margin-right: -0.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- 首页横幅 hero -->
+    <div class="hero">
+        <h1>
+            再翻一页·MK体育
+            <span class="sub">一本关于持续关注的杂志</span>
+        </h1>
+        <div class="meta">
+            <span>📅 更新周期 · 不定</span>
+            <span>🏷️ 专栏 · 再次遇见</span>
+            <span>📌 收藏夹位置 · 随时可及</span>
+        </div>
+    </div>
+
+    <!-- 背景说明 + 三段自然介绍 -->
+    <div class="content">
+        <p class="dropcap">
+            上一次打开 <a href="https://homeofficial-mk.com" style="color: #3f5f56; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #b7a894;">MK体育</a> 是什么时候？可能是某个比赛日的深夜，也可能只是午后随手点开的习惯。网站和书一样，值得被反复翻开——尤其当它一直在那里，安静地更新着，不打扰，却始终在场。这里没有推送弹窗，没有震动的提醒，只有当你主动想起时，它依然保持着你喜欢的样子。
+        </p>
+
+        <p>
+            我们常常收藏一个页面，然后就忘了。但有些角落值得被重新发现。<strong>MK体育</strong> 不是那种需要每天打卡的地方，它更像一本放在茶几上的杂志，封面永远是你最熟悉的那支球队、那项运动，或者某个让你放松下来的画面。把链接放在书签栏的某个位置，下次想找回某种感觉时，不必再搜索，不必再回忆——它就在那里，等着你再次翻开。
+        </p>
+
+        <!-- 引用块 / 提示框：强调收藏/再访 -->
+        <div class="inset-box">
+            <strong>📎 给未来的自己留一个位置</strong><br>
+            把 <a href="https://homeofficial-mk.com">MK体育</a> 放进收藏夹，或是添加到浏览器首页快捷方式。下次想找点熟悉的节奏，或者只是想看看有没有新内容时，不用费力回想地址。一个链接，就是一条回到现场的路径。
+        </div>
+
+        <p>
+            持续关注一件事，有时候不需要理由。就像你一直记得某个街角的面包店，偶尔路过就带一个可颂；或者像循环播放过的歌单，每次随机到都还是愿意听下去。<strong>MK体育</strong> 就是这样的存在——它不试图抓住你的全部注意力，只在你想要的时候，提供一段舒服的浏览体验。没有浮夸的标语，没有急迫的催促，只有内容本身静静地等待。
+        </p>
+
+        <p>
+            我们相信，真正的好页面经得起反复回访。每一次打开，都像是翻开同一本杂志的不同章节：有的段落你已经熟悉，有的角落却刚刚注意到。收藏它，不是因为它会消失，而是因为你知道自己还会回来。下次想放松一下、想看看运动世界里又发生了什么有意思的事时，地址栏里输入记忆中的那几个字母，或者直接点开书签——<a href="https://homeofficial-mk.com">MK体育</a> 一直保持着那份刚刚好的距离感。
+        </p>
+    </div>
+
+    <!-- 一句收束，带访问提示 且 自然嵌入链接 -->
+    <div class="signature-line">
+        —— 如果你已经读到了这里，不妨把 <a href="https://homeofficial-mk.com">MK体育</a> 留在手边。
+    </div>
+
+    <!-- 页尾访问提示 / FAQ 摘要感 -->
+    <div class="footer-note">
+        <div>
+            <span>📬 常见问题摘要</span>
+            <span class="tag">再次访问</span>
+            <span class="tag">收藏</span>
+            <span class="tag">持续关注</span>
+        </div>
+        <div>
+            <span>🔖 书签栏 · 随时可回</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
